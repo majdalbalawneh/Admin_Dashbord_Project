@@ -1,0 +1,88 @@
+:root {
+    --font-color: #c990f3; 
+  }
+  
+  * {
+    
+  }
+  
+  .logcontainer {
+    width: 100%;
+    
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgb(241, 239, 245) 0%, rgb(237, 234, 241) 100%);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--font-color);
+    box-sizing: border-box;
+    font-size: 16px;
+  
+
+  }
+/*   
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgb(78, 45, 131) 0%, rgb(131, 72, 198) 100%);
+  } */
+  .formm {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 1em;
+    border: 1px solid var(--font-color);
+    padding: 1em 2em;
+  }
+  .headerr {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0 auto;
+    font-size: 1.5em;
+  }
+  .form__divv {
+    position: relative;
+    padding: 2em;
+  }
+  input {
+    width: 100%;
+    background: transparent;
+    color: var(--font-color);
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid var(--font-color);
+    padding: 0.7em;
+  }
+  .form__labell {
+    position: absolute;
+    left: 2em;
+    top: 3em;
+    transition: all 300ms ease;
+  }
+  
+  input:focus ~ .form__labell,
+  input:valid ~ .form__labell {
+    font-size: 14px;
+    color: rgb(115, 29, 214);
+    top: 1.5em;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .submitee {
+    width: 100%;
+    color: #e3d6eb;
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .submitee:hover {
+    background: rgb(54, 4, 107);
+  }
